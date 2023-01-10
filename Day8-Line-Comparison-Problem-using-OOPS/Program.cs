@@ -22,6 +22,16 @@
             Console.WriteLine("Length of Second Line " + length2);
             obj1.EqualityMethod(length1.ToString(), length2.ToString());
 
+            //Compare two lines
+            LineCompare line1 = new LineCompare(6, 4, 4, 2);
+            double len1 = line1.FindingLength2();
+            LineCompare line2 = new LineCompare(6, 4, 3, 6);
+            double len2 = line2.FindingLength2();
+
+            Console.WriteLine("Length of First Line " + len1);
+            Console.WriteLine("Length of Second Line " + len2);
+            line1.comparingLines(len1.ToString(), len2.ToString());
+
         }
     }
 }
