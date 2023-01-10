@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Line Comparison Problem using OOPS!!!");
+
+            // Console.WriteLine("Welcome to Line Comparison Problem using OOPS!!!");
+
+            //Find length of line
+            FindLength obj1 = new FindLength(-6, 4, -4, 6);
+            double length = obj1.FindingLength();
+            Console.WriteLine("Length of Line is: " + length);
         }
     }
 }
